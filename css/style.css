@@ -1,0 +1,112 @@
+body {
+  background-color: #132043;
+  color: #f9f6f6 !important;
+  overflow: hidden;
+}
+
+.nav-tab {
+  background-color: #d8a3a9;
+}
+
+.logo {
+  width: 50px;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+i {
+  cursor: pointer;
+  color: #d8a3a9;
+}
+
+.meal-layer {
+  width: 100%;
+  height: 100%;
+  background-color: #f1b4bba1;
+  top: 100%;
+  transition: 0.5s;
+}
+
+.meal:hover .meal-layer {
+  top: 0;
+}
+
+.nav-link {
+  color: #fff;
+}
+
+.footer,
+.meal-clr,
+.nav-link:hover {
+  color: #1f4172;
+}
+
+.side-nav-menu {
+  z-index: 99;
+}
+.nav-header {
+  background-color: #1f4172;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.alert {
+  width: fit-content;
+}
+
+.loading-screen {
+  z-index: 999;
+  display: flex;
+}
+
+.inner-loading-screen {
+  position: absolute;
+  z-index: 9;
+  background-color: #ffffff;
+  display: flex;
+}
+
+.btn-source,
+.alert-recipes {
+  background-color: #d8a3a9;
+  color: #fff;
+}
+
+.alert-recipes {
+  color: #1f4172;
+}
+
+.btn-source:hover {
+  background-color: #d8a3a9;
+  border: 1px solid #d8a3a9;
+}
+
+.loader {
+  width: 50px;
+  --b: 8px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: #514b82;
+  -webkit-mask: repeating-conic-gradient(
+      #0000 0deg,
+      #000 1deg 70deg,
+      #0000 71deg 90deg
+    ),
+    radial-gradient(
+      farthest-side,
+      #0000 calc(100% - var(--b) - 1px),
+      #000 calc(100% - var(--b))
+    );
+  -webkit-mask-composite: destination-in;
+  mask-composite: intersect;
+  animation: l5 1s infinite;
+}
+@keyframes l5 {
+  to {
+    transform: rotate(0.5turn);
+  }
+}

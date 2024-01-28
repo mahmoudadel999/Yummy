@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yummy</title>
+
+    <!-- & link favicon file-->
+    <link rel="icon" href="./imgs//favicon.png" type="image/x-icon" />
+    <!-- & link Font Awesome file-->
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <!-- & link bootstrap file-->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <!-- & link style file-->
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!-- & Loading-->
+    <div
+      class="loading-screen position-fixed top-0 start-0 end-0 bottom-0 bg-white justify-content-center align-items-center"
+    >
+      <i class="fa-solid fa-circle-notch fa-spin fa-5x"></i>
+    </div>
+
+    <!-- & Navbar-->
+    <div class="side-nav-menu min-vh-100 position-fixed d-flex top-0">
+      <div
+        class="nav-tab d-flex flex-column justify-content-between min-vh-100 p-4"
+      >
+        <div class="links">
+          <ul class="list-unstyled overflow-hidden">
+            <li
+              onclick="showSearchInputs(); closeNavBar()"
+              class="py-2 nav-link position-relative cursor-pointer text-capitalize"
+            >
+              search
+            </li>
+            <li
+              onclick="getCategoriesYummy(); closeNavBar()"
+              class="py-2 nav-link position-relative cursor-pointer text-capitalize"
+            >
+              categories
+            </li>
+            <li
+              onclick="getAreasYummy(); closeNavBar()"
+              class="py-2 nav-link position-relative cursor-pointer text-capitalize"
+            >
+              area
+            </li>
+            <li
+              onclick="getIngredientsYummy(); closeNavBar()"
+              class="py-2 nav-link position-relative cursor-pointer text-capitalize"
+            >
+              ingredients
+            </li>
+            <li
+              onclick="showContactsYummy(); closeNavBar()"
+              class="py-2 nav-link position-relative cursor-pointer text-capitalize"
+            >
+              contact us
+            </li>
+          </ul>
+        </div>
+
+        <div class="nav-footer">
+          <div class="icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-solid fa-globe"></i>
+          </div>
+          <div class="footer">
+            <p>Copyright Â© 2019 All Rights <br />Reserved.</p>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="nav-header d-flex flex-column justify-content-between py-4 text-center px-2 text-black"
+      >
+        <a href="./index.html">
+          <img
+            class="logo cursor-pointer"
+            src="imgs/logo.png"
+            alt=""
+            srcset=""
+          />
+        </a>
+        <i class="fa-solid open-close-icon fa-align-justify fa-2x"></i>
+        <div>
+          <i class="fa-solid fa-globe d-block"></i>
+          <i class="fa-solid fa-share-nodes"></i>
+        </div>
+      </div>
+    </div>
+
+    <!-- & Search food-->
+    <div class="container w-75" id="searchYummy"></div>
+
+    <!-- & Details food-->
+    <div class="min-vh-100 position-relative">
+      <div
+        class="inner-loading-screen top-0 start-0 end-0 bottom-0 justify-content-center align-items-center"
+      >
+        <i class="fa fa-spinner fa-spin fa-5x"></i>
+      </div>
+
+      <div class="container">
+        <div class="row py-5 g-4" id="mealsYummy"></div>
+      </div>
+    </div>
+
+    <!-- & link jquery file-->
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <!-- & link bootstrap file-->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <!-- & link  file-->
+    <script src="./js/index.js"></script>
+  </body>
+</html>
